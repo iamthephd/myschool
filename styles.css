@@ -1,0 +1,87 @@
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.sidebar-btn {
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+}
+.sidebar-btn:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+.sidebar-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+.metric-card {
+  transition: transform 0.2s ease-in-out;
+}
+.metric-card:hover {
+  transform: translateY(-2px);
+}
+.sidebar {
+  min-height: calc(100vh - 80px);
+  width: 250px;
+}
+.main-content {
+  min-height: calc(100vh - 80px);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: white;
+  margin: 2% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.form-section {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.form-section h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+.page-content {
+  display: none;
+}
+.page-content.active {
+  display: block;
+}
+@media print {
+  .sidebar {
+    width: 200px;
+  }
+  .card-shadow {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+  .modal {
+    display: none !important;
+  }
+}
