@@ -1,0 +1,17 @@
+[project]
+name = "schoolaiproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.16.4",
+    "psycopg2-binary>=2.9.10",
+    "sqlalchemy>=2.0.41",
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.22.0",
+    "pydantic>=2.5.3",
+    "python-jose[cryptography]>=3.3.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-multipart>=0.0.7",
+]
